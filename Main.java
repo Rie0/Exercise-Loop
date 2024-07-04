@@ -64,21 +64,23 @@ public class Main {
 
 //***********************************EX5***********************************
 
-//        System.out.println("Enter the number: ");
-//        int number= sc.nextInt();
-//        int eSum=0;
-//        int oSum=0;
-//
-//        do{
-//            if(number%2==0){//even
-//                eSum+=number;
-//            }else {//odd
-//                oSum+=number;
-//            }
-//            --number;
-//        }while (number>0);
-//        System.out.println("Sum of even numbers: "+eSum);
-//        System.out.println("Sum of odd numbers: "+oSum);
+        System.out.println("How many number?");
+        int count =sc.nextInt();
+        int eSum=0;
+        int oSum=0;
+
+        for (int i=0; i<count;i++){
+            System.out.println("Enter a number:");
+            int number= sc.nextInt();
+            if(number%2==0){//even
+                eSum+=number;
+            }else {//odd
+                oSum+=number;
+            }
+        }
+
+        System.out.println("Sum of even numbers: "+eSum);
+        System.out.println("Sum of odd numbers: "+oSum);
 
 //***********************************EX6***********************************
 
@@ -134,7 +136,6 @@ public class Main {
 //            --pointer;
 //
 //        } System.out.println("Is word Palindrome = "+isPalindrome);
-
 
     }
         }
